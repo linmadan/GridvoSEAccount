@@ -1,0 +1,18 @@
+{
+  "name": "gridvo-seaccount",
+  "version": "0.0.1",
+  "main": "index",
+  "author": {
+    "name": "linmadan",
+    "email": "772181827@qq.com"
+  },
+  "dependencies": {
+    "bearcat": "^0.4.29",
+    "mongodb": "^2.1.21",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {
+    "mocha": "^2.5.3",
+    "should": "^9.0.0"
+  }
+}

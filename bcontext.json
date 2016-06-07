@@ -1,0 +1,26 @@
+{
+  "name": "GridvoSEAccountDI",
+  "scan": "lib",
+  "beans": [
+    {
+      "id": "accountManage",
+      "func": "lib.application.accountManage",
+      "props": [
+        {
+          "name": "__accountRepository__",
+          "ref": "accountRepository"
+        }
+      ]
+    },
+    {
+      "id": "accountRepository",
+      "func": "lib.application.repository.accountRepositoryMongoDB",
+      "props": [
+        {
+          "name": "dBUrl",
+          "value": "mongodb://10.0.2.16:27017/GDataCenter"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "name": "GridvoSEAccountTestDI",
+  "scan": "lib",
+  "beans": [
+    {
+      "id": "accountManage",
+      "func": "lib.application.accountManage",
+      "props": [
+        {
+          "name": "__accountRepository__",
+          "ref": "mockAccountRepository"
+        }
+      ]
+    },
+    {
+      "id": "mockAccountRepository",
+      "func": "test.mock.accountRepository"
+    },
+    {
+      "id": "accountRepository",
+      "func": "lib.application.repository.accountRepositoryMongoDB",
+      "props": [
+        {
+          "name": "dBUrl",
+          "value": "mongodb://localhost:27017/TestGDataCenter"
+        }
+      ]
+    }
+  ]
+}
